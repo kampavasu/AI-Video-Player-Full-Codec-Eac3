@@ -46,88 +46,108 @@
             display: inline-block;
             background: #e74c3c;
             color: white;
-            padding: 15px 30px;
-            text-decoration: none;
-            font-size: 1.2em;
-            font-weight: bold;
-            border-radius: 5px;
-            transition: background 0.3s ease;
-        }
-        .btn:hover {
-            background: #c0392b;
-        }
-        .features {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 20px;
-            margin-top: 20px;
-        }
-        .feature-item {
-            background: #fff;
-            padding: 15px;
-            border-left: 4px solid #3498db;
-        }
-        footer {
-            text-align: center;
-            margin-top: 50px;
-            font-size: 0.9em;
-            color: #7f8c8d;
+<!DOCTYPE html>
+
+        @media (max-width: 600px) {
+            .page { padding: 32px 16px 60px; }
+            .page-title { font-size: 1.5rem; }
         }
     </style>
 </head>
 <body>
 
-<header>
-    <h1>AI Video Player Codec Pack</h1>
-    <p>The Ultimate Solution for Prebuilt FFmpeg Codecs & .so Files</p>
-</header>
 
-<div class="container">
-    <section>
-        <h2>Fix "Video Not Playing" Issues Instantly</h2>
-        <p>Are you experiencing issues where your <strong>AI Video Player</strong> won't load certain formats? This happens because standard players often lack the necessary <strong>FFmpeg full codec</strong> support. Our <strong>prebuilt codec pack</strong> provides all the essential <strong>.so files</strong> required to play any media format without errors.</p>
-    </section>
+<div class="topbar">
+    <a class="topbar-logo" href="#">AI Video Player</a>
+    <span class="topbar-sep">/</span>
+    <span class="topbar-page">Codec Pack</span>
+</div>
 
-    <div class="download-box">
-        <h3>Download AI Video Player Codec Pack ZIP</h3>
-        <p>Get the full FFmpeg library and .so files for seamless playback.</p>
-        <a href="https://drive.google.com/file/d/17hmlbGlErP0_7dLMhA-Rg1PuYeKbKSFY/view?usp=sharing" class="btn" target="_blank" rel="noopener">Download Codec ZIP Now</a>
-        <p><small>File hosted on Google Drive (Official Link)</small></p>
-    </div>
 
-    <section>
-        <h2>Why You Need This Codec Pack</h2>
-        <div class="features">
-            <div class="feature-item">
-                <strong>Play All Audio & Video:</strong> Unlock support for AC3, DTS, TrueHD, and high-bitrate 4K MKV files.
-            </div>
-            <div class="feature-item">
-                <strong>FFmpeg Full Library:</strong> Includes updated libraries for maximum compatibility with AI-enhanced players.
-            </div>
-            <div class="feature-item">
-                <strong>Prebuilt .so Files:</strong> No need to compile from source. Simply extract and point your player to the library.
-            </div>
-            <div class="feature-item">
-                <strong>Optimize Performance:</strong> Built-in hardware acceleration support for smoother rendering.
+<div class="page">
+
+
+    <h1 class="page-title">Codec Pack</h1>
+    <p class="page-lead">Prebuilt <code>.so</code> libraries for AI Video Player on Android. Fixes unsupported format errors and adds EAC3, DTS, and 4K decoding support.</p>
+
+
+    <!-- DOWNLOAD -->
+    <div class="download-block">
+        <p>Download the codec package below, then follow the installation steps.</p>
+        <a href="https://drive.google.com/file/d/17hmlbGlErP0_7dLMhA-Rg1PuYeKbKSFY/view?usp=sharing" class="btn" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+            Download Codec Pack (ZIP)
+        </a>
+  </div>
+
+
+    <hr class="divider">
+
+
+    <h2>What's included</h2>
+    <div class="features">
+        <div class="feat-row">
+            <div class="feat-dot"></div>
+            <div>
+                <div class="feat-label">Full audio support</div>
+                <div class="feat-desc">Eac3, DTS, DTS-HD, TrueHD, and EAC3 — formats typically missing from stock Android builds.</div>
             </div>
         </div>
-    </section>
+        <div class="feat-row">
+            <div class="feat-dot"></div>
+            <div>
+                <div class="feat-label">4K &amp; HEVC decoding</div>
+                <div class="feat-desc">Smooth HEVC (H.265) and VP9 playback for 4K MKV, MP4, and WebM files.</div>
+            </div>
+        </div>
+        <div class="feat-row">
+            <div class="feat-dot"></div>
+            <div>
+                <div class="feat-label">Multi-architecture</div>
+                <div class="feat-desc">Compiled for ARMv7, ARMv8 (64-bit), and x86. Compatible with nearly all Android devices.</div>
+            </div>
+        </div>
+    </div>
 
-    <section style="margin-top: 30px;">
-        <h2>How to Install AI Video Player Codecs</h2>
-        <ol>
-            <li>Download the <strong>AI Video Player codec pack zip</strong> from the link above.</li>
-            <li>Extract the <strong>.so files</strong> to a folder on your device.</li>
-            <li>Open your AI Video Player settings.</li>
-            <li>Navigate to "Decoder" or "Custom Codec" section.</li>
-            <li>Select the folder containing the extracted <strong>ffmpeg full codec</strong> files.</li>
-            <li>Restart the app and enjoy uninterrupted playback!</li>
-        </ol>
-    </section>
 
-    <article>
-        <h2>Technical Specifications</h2>
-        <p>This pack is specifically designed for users searching for high-performance media handling. Whether you are dealing with a <strong>video not playing</strong> error or need a <strong>prebuilt codec</strong> for specialized AI hardware, this ZIP contains the latest stable FFmpeg builds optimized for mobile and desktop environments.</p>
+    <hr class="divider">
+
+
+    <h2>Installation</h2>
+    <div class="steps">
+        <div class="step">
+            <div class="step-n">1</div>
+            <p>Download the ZIP file and extract it to a folder on your device storage.</p>
+        </div>
+        <div class="step">
+            <div class="step-n">2</div>
+            <p>Open AI Video Player and go to <code>Settings → Decoder</code>.</p>
+        </div>
+        <div class="step">
+            <div class="step-n">3</div>
+            <p>Tap <code>Custom Codec Path</code> and select the extracted folder.</p>
+        </div>
+        <div class="step">
+            <div class="step-n">4</div>
+            <p>Restart the app. Playback should now work correctly.</p>
+        </div>
+    </div>
+
+
+    <hr class="divider">
+
+
+    <h2>Package details</h2>
+    <table class="meta-table">
+          <tr><td>Host</td><td>Google Drive — no login required</td></tr>
+    </table>
+
+
+</div>
+
+</body>
+</html>
+codec pack is specifically designed for users searching for high-performance media handling. Whether you are dealing with a <strong>video not playing</strong> error or need a <strong>prebuilt codec</strong> for specialized AI hardware, this ZIP contains the latest stable builds optimized for mobile and desktop environments.</p>
     </article>
 </div>
 
