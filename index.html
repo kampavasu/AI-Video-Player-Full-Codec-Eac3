@@ -1040,6 +1040,195 @@
 </head>
 <body>
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Codec Pack — AI Video Player</title>
+    <meta name="description" content="Download Full Codec Pack .so files for AI Video Player. Fix EAC3, DTS, and 4K playback issues instantly.">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+
+    <style>
+        :root {
+            --accent: #0969da;
+            --accent-hover: #0550ae;
+            --text: #1f2328;
+            --muted: #656d76;
+            --border: #d0d7de;
+            --bg: #ffffff;
+            --surface: #f6f8fa;
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            background: var(--bg);
+            color: var(--text);
+            font-size: 15px;
+            line-height: 1.6;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        .topbar {
+            border-bottom: 1px solid var(--border);
+            padding: 14px 24px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .topbar-logo {
+            font-size: 0.9rem;
+            font-weight: 600;
+            color: var(--text);
+            text-decoration: none;
+        }
+
+        .topbar-sep { color: var(--border); font-size: 1.2rem; }
+
+        .topbar-page {
+            font-size: 0.9rem;
+            color: var(--muted);
+        }
+
+        .page {
+            max-width: 760px;
+            margin: 0 auto;
+            padding: 48px 24px 80px;
+        }
+
+        .page-title {
+            font-size: 1.85rem;
+            font-weight: 600;
+            letter-spacing: -0.02em;
+            color: var(--text);
+            margin-bottom: 10px;
+        }
+
+        .page-lead {
+            font-size: 1rem;
+            color: var(--muted);
+            margin-bottom: 36px;
+            max-width: 560px;
+        }
+
+        code {
+            font-family: ui-monospace, 'SFMono-Regular', monospace;
+            font-size: 0.85em;
+            background: var(--surface);
+            border: 1px solid var(--border);
+            border-radius: 4px;
+            padding: 1px 6px;
+            color: var(--text);
+        }
+
+        hr.divider {
+            border: none;
+            border-top: 1px solid var(--border);
+            margin: 32px 0;
+        }
+
+        .download-block {
+            background: var(--surface);
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            padding: 24px;
+            margin-bottom: 32px;
+            text-align: center;
+        }
+
+        .download-block p {
+            font-size: 0.9rem;
+            color: var(--muted);
+            margin-bottom: 16px;
+        }
+
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            background: var(--accent);
+            color: #fff;
+            text-decoration: none;
+            padding: 12px 24px;
+            border-radius: 6px;
+            font-size: 0.95rem;
+            font-weight: 500;
+            transition: background 0.15s;
+        }
+
+        .btn:hover { background: var(--accent-hover); }
+
+        .btn svg {
+            width: 18px; height: 18px;
+            stroke: #fff; fill: none;
+            stroke-width: 2; stroke-linecap: round; stroke-linejoin: round;
+        }
+
+        h2 {
+            font-size: 1.05rem;
+            font-weight: 600;
+            color: var(--text);
+            margin-bottom: 14px;
+        }
+
+        .features, .steps {
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            overflow: hidden;
+            margin-bottom: 32px;
+        }
+
+        .feat-row, .step {
+            display: flex;
+            gap: 16px;
+            padding: 14px 18px;
+            border-bottom: 1px solid var(--border);
+        }
+
+        .feat-row:last-child, .step:last-child { border-bottom: none; }
+
+        .feat-dot {
+            width: 8px; height: 8px;
+            border-radius: 50%;
+            background: var(--accent);
+            flex-shrink: 0;
+            margin-top: 6px;
+        }
+
+        .step-n {
+            background: var(--accent);
+            color: #fff;
+            font-size: 0.7rem;
+            font-weight: 600;
+            width: 20px; height: 20px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0;
+        }
+
+        footer {
+            border-top: 1px solid var(--border);
+            padding: 20px 24px;
+            font-size: 0.8rem;
+            color: var(--muted);
+            text-align: center;
+        }
+
+        @media (max-width: 600px) {
+            .page { padding: 32px 16px 60px; }
+            .page-title { font-size: 1.5rem; }
+        }
+    </style>
+</head>
+<body>
 
 <div class="topbar">
     <a class="topbar-logo" href="#">AI Video Player</a>
@@ -1047,87 +1236,60 @@
     <span class="topbar-page">Codec Pack</span>
 </div>
 
-
 <div class="page">
-
-
     <h1 class="page-title">Codec Pack</h1>
     <p class="page-lead">Prebuilt <code>.so</code> libraries for AI Video Player on Android. Fixes unsupported format errors and adds EAC3, DTS, and 4K decoding support.</p>
 
-
-    <!-- DOWNLOAD -->
     <div class="download-block">
-        <p>Download the codec package below, then follow the installation steps.</p>
-        <a href="https://drive.google.com/file/d/17hmlbGlErP0_7dLMhA-Rg1PuYeKbKSFY/view?usp=sharing" class="btn" target="_blank" rel="noopener">
+        <p>Download the official codec package from GitHub to ensure compatibility.</p>
+        <a href="https://github.com/Codec-Pack/AI-Video-Player-Full-Codec/blob/53176ebb3fb53244ff889aa1f7160829c42105f2/AiVideoPlayerCodecFull.zip" class="btn" target="_blank" rel="noopener">
             <svg viewBox="0 0 24 24"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
-            Download Codec Pack (ZIP)
+            Download Codec Pack from GitHub
         </a>
-  </div>
-
+    </div>
 
     <hr class="divider">
-
 
     <h2>What's included</h2>
     <div class="features">
         <div class="feat-row">
             <div class="feat-dot"></div>
             <div>
-                <div class="feat-label">Full audio support</div>
-                <div class="feat-desc">Eac3, DTS, DTS-HD, TrueHD, and EAC3 — formats typically missing from stock Android builds.</div>
+                <strong>Full audio support</strong>
+                <p style="font-size: 0.85rem; color: var(--muted);">EAC3, DTS, DTS-HD, and TrueHD — formats usually restricted in standard players.</p>
             </div>
         </div>
         <div class="feat-row">
             <div class="feat-dot"></div>
             <div>
-                <div class="feat-label">4K &amp; HEVC decoding</div>
-                <div class="feat-desc">Smooth HEVC (H.265) and VP9 playback for 4K MKV, MP4, and WebM files.</div>
-            </div>
-        </div>
-        <div class="feat-row">
-            <div class="feat-dot"></div>
-            <div>
-                <div class="feat-label">Multi-architecture</div>
-                <div class="feat-desc">Compiled for ARMv7, ARMv8 (64-bit), and x86. Compatible with nearly all Android devices.</div>
+                <strong>High-Res Decoding</strong>
+                <p style="font-size: 0.85rem; color: var(--muted);">Hardware-accelerated HEVC (H.265) and VP9 playback for smooth 4K video.</p>
             </div>
         </div>
     </div>
 
-
     <hr class="divider">
-
 
     <h2>Installation</h2>
     <div class="steps">
         <div class="step">
             <div class="step-n">1</div>
-            <p>Download the ZIP file and extract it to a folder on your device storage.</p>
+            <p>Download and extract the ZIP file to your device.</p>
         </div>
         <div class="step">
             <div class="step-n">2</div>
-            <p>Open AI Video Player and go to <code>Settings → Decoder</code>.</p>
+            <p>In AI Video Player, go to <strong>Settings → Decoder</strong>.</p>
         </div>
         <div class="step">
             <div class="step-n">3</div>
-            <p>Tap <code>Custom Codec Path</code> and select the extracted folder.</p>
-        </div>
-        <div class="step">
-            <div class="step-n">4</div>
-            <p>Restart the app. Playback should now work correctly.</p>
+            <p>Select <strong>Custom Codec Path</strong> and point to the extracted folder.</p>
         </div>
     </div>
-
-
-    <hr class="divider">
-
-
-    <h2>Package details</h2>
-    <table class="meta-table">
-          <tr><td>Host</td><td>Google Drive — no login required</td></tr>
-    </table>
-
-
 </div>
+
+<footer>
+    &copy; 2026 AI Video Player Codec Pack. Hosted on <a href="https://github.com/Codec-Pack">GitHub</a>.
+</footer>
 
 </body>
 </html>
